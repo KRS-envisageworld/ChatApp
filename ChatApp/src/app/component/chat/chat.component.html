@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-lg-2">
+        <div class="d-grid">
+            <button class="btn btn-primary btn-vblock" type="button" (click)="backtoHome()">Back to Home</button>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-lg-2">
+            <div class="card border-secondary mb-3">
+                <div class="card-header h3 text-muted text-center">Users</div>
+                <div class="card-body" style="min-height: 555px;">
+                    @for(user of chatservice.onlineUsers; track user){
+                    <div class="row mt-1">
+                        <div class="col">
+                            <div class="d-grid">
+                                <button type="button" class="btn btn-success card-text btn-block"
+                                [ngClass]="user === chatservice.myChatName ?'btn-success':'btn-dark'" [disabled]="user === chatservice.myChatName">{{user}}</button>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div class="card border-secondary">
+                <div class="card-header-h3 text-muted text-center">Messages</div>
+                <div class="card-body" style="min-height: 525px;">
+                   <app-message-view [messages]="messages"></app-message-view>
+                </div>
+                <div class="card-footer">
+                    <app-chat-input (messageEmiter)="sendMessage($event)"></app-chat-input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

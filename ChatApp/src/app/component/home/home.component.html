@@ -1,0 +1,54 @@
+@if(!openChat){
+    <ng-container>
+        <div class="text-center">
+            <h1>Let's get you connected and <span class="text-danger">chat</span> with other <span
+                    class="text-info">peple</span></h1>
+        </div>
+    
+        <div class="d-flex justify-content-center">
+            <div class="col-12 col-lg-5">
+                <main class="form-signin">
+                    <form class="p-3 border mt-5" (ngSubmit)="submitForm()" [formGroup]="userForm">
+                        <h3>Choose your name</h3>
+                        <div class="form-floating mb-3">
+                            <input formControlName="name" type="text" class="form-control" id=""
+                                placeholder="Name" [class.is-invalid]="submitted && userForm.get('name')?.errors">
+                            <label for="user">Name</label>
+                            @if (submitted && userForm.get('name')?.hasError('required')) {
+                            <div class="invalid-feedback">
+                                Name is required
+                            </div>
+                            }
+    
+                            @if(submitted && (userForm.get('name')?.hasError('minlength') ||
+                            userForm.get('name')?.hasError('maxlength'))) {
+                            <div class="invalid-feedback">
+                                Name must be between 3 and 20 characters
+                            </div>
+                            }
+                        </div>
+    
+                        <div class="form-floating">
+                            @if(apiErrorMessages.length > 0){
+                            <ul class="text-danger">
+                                @for(error of apiErrorMessages; track error){
+                                <li>{{ error }}</li>
+                                }
+                            </ul>
+                            }
+                        </div>
+    
+                        <div class="d-grid mt-4 px-4">
+                            <button class="btn btn-warning" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </ng-container>
+    }
+    @else{
+    <ng-container>
+        <app-chat (closeChatEmitter)="closeChat()"></app-chat>
+    </ng-container>
+    }

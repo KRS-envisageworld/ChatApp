@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|d:\\project\\coding fun\\chatapp\\signalrpractice\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|solutionrelative:hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|d:\\project\\coding fun\\chatapp\\signalrpractice\\model\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|solutionrelative:model\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|d:\\project\\coding fun\\chatapp\\signalrpractice\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|solutionrelative:services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|d:\\project\\coding fun\\chatapp\\signalrpractice\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|solutionrelative:controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|d:\\project\\coding fun\\chatapp\\signalrpractice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|d:\\project\\coding fun\\chatapp\\signalrpractice\\model\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|solutionrelative:model\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|d:\\project\\coding fun\\chatapp\\signalrpractice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|d:\\project\\coding fun\\chatapp\\signalrpractice\\signalrpractice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{78B65319-FA3C-46C3-8D20-4F70C1CD05DF}|SignalRPractice.csproj|solutionrelative:signalrpractice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MessageDto.cs",
+              "DocumentMoniker": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Model\\MessageDto.cs",
+              "RelativeDocumentMoniker": "Model\\MessageDto.cs",
+              "ToolTip": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Model\\MessageDto.cs",
+              "RelativeToolTip": "Model\\MessageDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T18:56:41.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-07T13:52:32.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatController.cs",
+              "ToolTip": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Controllers\\ChatController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T13:51:35.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\ChatHub.cs",
+              "ToolTip": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "Hubs\\ChatHub.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA8wDYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T13:50:07.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Model\\UserDto.cs",
+              "RelativeDocumentMoniker": "Model\\UserDto.cs",
+              "ToolTip": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Model\\UserDto.cs",
+              "RelativeToolTip": "Model\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T13:49:11.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Services\\ChatService.cs",
+              "RelativeDocumentMoniker": "Services\\ChatService.cs",
+              "ToolTip": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Services\\ChatService.cs",
+              "RelativeToolTip": "Services\\ChatService.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAUwDkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T13:48:06.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T13:46:06.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignalRPractice.csproj",
+              "DocumentMoniker": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\SignalRPractice.csproj",
+              "RelativeDocumentMoniker": "SignalRPractice.csproj",
+              "ToolTip": "D:\\Project\\Coding fun\\ChatApp\\SignalRPractice\\SignalRPractice.csproj",
+              "RelativeToolTip": "SignalRPractice.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-07T13:46:09.515Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
