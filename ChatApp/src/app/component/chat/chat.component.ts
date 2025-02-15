@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
 import { ChatInputComponent } from '../chat-input/chat-input.component';
 import { MessageViewComponent } from "../message-view/message-view.component";
 import { Message } from '../../models/message.model';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PrivatechatComponent } from '../privatechat/privatechat.component';
 
 @Component({
   selector: 'app-chat',
@@ -19,12 +21,12 @@ import { Message } from '../../models/message.model';
   styleUrl: './chat.component.scss',
 })
 export class ChatComponent implements OnInit, OnDestroy {
+
   @Output() closeChatEmitter = new EventEmitter();
   username = '';
   messages:Message[]=[];
-  constructor(public chatservice: Chatservices) {
-    debugger;
-    this.chatservice.message$.subscribe((message)=> { debugger;this.messages.push(message)});
+  constructor(public chatservice: Chatservices, private modalService: NgbModal) {
+    this.chatservice.message$.subscribe((message)=> { this.messages.push(message)});
     this.username = chatservice.myChatName;
   }
   ngOnDestroy(): void {
@@ -32,15 +34,17 @@ export class ChatComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    debugger;
     this.chatservice.createChatConnection();
   }
   backtoHome() {
     this.closeChatEmitter.emit();
   }
 
-  sendMessage($event: any) {
-    debugger
+  sendMessage($event: string) {
     this.chatservice.sendMessage($event);
   }
+  openPrivateChat(toUser: string) {
+    const modalRef = this.modalService.open(PrivatechatComponent);
+    modalRef.componentInstance.user = toUser;
+    }
 }

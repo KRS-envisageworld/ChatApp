@@ -13,7 +13,6 @@ export class ChatInputComponent {
   @Output() messageEmiter = new EventEmitter();
   sendMessage() {
     if(this.message.trim() != ''){
-      debugger
       this.messageEmiter.emit(this.message);
       this.message = '';
     }

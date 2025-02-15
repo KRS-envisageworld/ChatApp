@@ -14,7 +14,7 @@
                     <div class="row mt-1">
                         <div class="col">
                             <div class="d-grid">
-                                <button type="button" class="btn btn-success card-text btn-block"
+                                <button type="button" class="btn btn-success card-text btn-block" (dblclick)="openPrivateChat(user)"
                                 [ngClass]="user === chatservice.myChatName ?'btn-success':'btn-dark'" [disabled]="user === chatservice.myChatName">{{user}}</button>
                             </div>
                         </div>

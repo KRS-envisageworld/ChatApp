@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.SignalR;
+using Microsoft.VisualBasic;
 
 using SignalRPractice.Model;
 using SignalRPractice.Services;
 
 using System;
+using System.Globalization;
 using System.Threading.Tasks;
 
 namespace SignalRPractice.Hubs
@@ -37,7 +39,7 @@ namespace SignalRPractice.Hubs
 		public async Task AddUserConnectionId(string user)
 		{
 			chatService.AddConnectionId(user, Context.ConnectionId);
-			 
+
 			await DispalyOnlineUser();
 		}
 
@@ -50,6 +52,42 @@ namespace SignalRPractice.Hubs
 		{
 			var onlineUsers = chatService.GetOnlineUsers();
 			await Clients.Groups("Techies").SendAsync("UpdateOnlineUsers", onlineUsers);
+		}
+
+		public async Task CreatePrivateChat(MessageDto message)
+		{
+			string groupName = GetPrivateGroupName(message.From, message.To);
+			await Groups.AddToGroupAsync(Context.ConnectionId, groupName);
+
+			string toUser = chatService.GetConnectionIdByUser(message.To);
+			await Groups.AddToGroupAsync(toUser, groupName);
+
+			await Clients.Client(toUser).SendAsync("OpenPriavteChat", message);
+
+		}
+
+		public async Task	RecivePrivateMessage(MessageDto message)
+		{
+			string groupName = GetPrivateGroupName(message.From, message.To);
+			await Clients.Groups(groupName).SendAsync("NewPrivateMessage", message);
+		}
+
+		public async Task RemovePriavteChat(string from, string to)
+		{
+			string groupName = GetPrivateGroupName(from, to);
+			await Clients.Groups(groupName).SendAsync("RemovePrivateChat");
+
+			await Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
+			string user = chatService.GetConnectionIdByUser(to);
+
+			await Groups.RemoveFromGroupAsync(user, groupName);
+
+		}
+
+		public string GetPrivateGroupName(string from, string to)
+		{
+			var stringCompare = string.CompareOrdinal(from, to) > 0;
+			return stringCompare ? $"{from}-{to}" : $"{to}-{from}";
 		}
 	}
 }

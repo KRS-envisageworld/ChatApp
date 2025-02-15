@@ -18,31 +18,32 @@ builder.Services.AddSignalR(e =>
 	e.EnableDetailedErrors = true;
 	e.MaximumReceiveMessageSize = 102400000;
 });
-builder.Services.AddCors(options =>
-{
-	options.AddPolicy("AllowSpecificOrigins", builder =>
-	{
-		builder
-				.SetIsOriginAllowedToAllowWildcardSubdomains()
-				.SetPreflightMaxAge(TimeSpan.FromHours(24))
-				.WithOrigins("http://localhost:4200")
-				.AllowAnyMethod()
-				.AllowAnyHeader()
-				.AllowCredentials()
-				.Build();
-	});
-});
+//builder.Services.AddCors(options =>
+//{
+//	options.AddPolicy("AllowSpecificOrigins", builder =>
+//	{
+//		builder
+//				.SetIsOriginAllowedToAllowWildcardSubdomains()
+//				.SetPreflightMaxAge(TimeSpan.FromHours(24))
+//				.WithOrigins("http://localhost:4200")
+//				.AllowAnyMethod()
+//				.AllowAnyHeader()
+//				.AllowCredentials()
+//				.Build();
+//	});
+//});
 var app = builder.Build();
-app.UseCors("AllowSpecificOrigins");
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:4200"));
 
 app.UseHttpsRedirection();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 app.UseAuthorization();
 
+
 app.MapControllers();
-app.MapHub<ChatHub>("techtalk", options =>
-{
-	options.AllowStatefulReconnects = true;
-});
+app.MapHub<ChatHub>("techtalk");
+app.MapFallbackToController("Index", "Fallback");
 
 app.Run();
