@@ -28,17 +28,17 @@ nupkg/
 *.sln.docstates
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-build/
-bld/
-[Bb]in/
-[Oo]bj/
-[Oo]ut/
-msbuild.log
-msbuild.err
-msbuild.wrn
+SignalRPractice/[Dd]ebug/
+SignalRPractice/[Dd]ebugPublic/
+SignalRPractice/[Rr]elease/
+SignalRPractice/[Rr]eleases/
+SignalRPractice/x64/
+SignalRPractice/x86/
+SignalRPractice/build/
+SignalRPractice/bld/
+SignalRPractice/[Bb]in/
+SignalRPractice/[Oo]bj/
+SignalRPractice/[Oo]ut/
+SignalRPractice/msbuild.log
+SignalRPractice/msbuild.err
+SignalRPractice/msbuild.wrn
