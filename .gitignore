@@ -42,3 +42,4 @@ SignalRPractice/[Oo]ut/
 SignalRPractice/msbuild.log
 SignalRPractice/msbuild.err
 SignalRPractice/msbuild.wrn
+/SignalRPractice/SignalRPractice.csproj.user

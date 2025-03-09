@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-using SignalRPractice.Model;
+using SignalRPractice.Model.ChatDTOs;
 using SignalRPractice.Services;
 
 namespace SignalRPractice.Controllers
@@ -16,7 +16,7 @@ namespace SignalRPractice.Controllers
 		}
 
 		[HttpPost("Register")]
-		public IActionResult Register([FromBody] UserDto user)
+		public IActionResult Register([FromBody] ChatUserDto user)
 		{
 			if (chatService.AddUser(user.Name))
 			{
